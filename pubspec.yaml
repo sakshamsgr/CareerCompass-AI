@@ -1,0 +1,57 @@
+name: career_simulator
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.6.0
+  firebase_auth: ^6.3.0
+  cloud_firestore: ^6.2.0
+  image_picker: ^1.0.7
+  image_cropper: ^12.2.1
+  firebase_storage: 13.2.0
+  http: ^1.6.0
+  url_launcher: ^6.3.2
+  google_generative_ai: ^0.4.7
+  flutter_dotenv: ^6.0.0
+  flutter_markdown: ^0.7.7+1
+  graphview: ^1.5.1
+  mailer: ^7.1.0
+  timeago: ^3.7.1
+  flutter_local_notifications: ^21.0.0
+  timezone: ^0.11.0
+  flutter_timezone: ^5.0.2
+
+  flutter_native_splash: any
+  intl: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^6.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/roadmap_logo.jpeg" # The app icon
+  min_sdk_android: 21
+
+flutter_native_splash:
+  background_image: "assets/images/splash_screen.png" # Must be .png
+  color: "#071120"
+  fullscreen: true
+  android_12:
+    color: "#071120"
+    image: "assets/images/splash_screen.png" # Must be .png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - .env
